@@ -2,7 +2,7 @@
 
 ## Objective
 The following repository tackles the regression task of prediciton of call volume for Seattle Fire Department.
-The Seattle Real Time Fire 911 Calls [dataset](https://data.seattle.gov/Public-Safety/Seattle-Real-Time-Fire-911-Calls/kzjm-xkqj) is maintained by US government for every 5 minutes. although, for this assessmnent, the past 5 years data (2017- Sept 2022) is utilized. The data hence obtained is pre-processed, trained and tested on a regression model namely XGBoost 
+The Seattle Real Time Fire 911 Calls [dataset](https://data.seattle.gov/Public-Safety/Seattle-Real-Time-Fire-911-Calls/kzjm-xkqj) is maintained by US government for every 5 minutes. Although, for this assessmnent, the past 5 years data (2017- Sept 2022) is utilized. The data hence obtained is pre-processed, trained and tested on a regression model namely XGBoost 
 
 ## Description
 
