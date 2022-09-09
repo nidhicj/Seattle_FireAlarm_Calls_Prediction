@@ -8,7 +8,7 @@ The Seattle Real Time Fire 911 Calls [dataset](https://data.seattle.gov/Public-S
 
 The source code for this assessment consists of pre-processing, models, train and prediction tasked files. For the complete analysis the following pipeline was adopted to understand the data and extract useful data
 
-![ML Pipeline](/figures/pipeline.png "Shiprock, New Mexico by Beau Rogers")
+![ML Pipeline](/figures/pipeline.png "ML_pipeline")
 
 ## Pre-processing 
 In this section, the data is first filtered out for past 5 years and sorted in ascending order (past date first). The number of calls occuring every hour for are segregated which forms the ground truth of the dataset. This data is visualized to check for any outliers or anomaly in the dataset. 
