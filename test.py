@@ -36,7 +36,10 @@ def test_wrong_dates(all_user_inputs):
             raise Exception("Sorry, the date is not correct") 
     for time in all_user_inputs:
         assert (0 <= int(time[3]) <=23 ) and (0 <= time[4] <=59)
-
+        
+    #for better accuracy conditions the testing timeline is set for dates after 2017-01-01
+    for border_time in all_user_inputs:
+        assert (int(border_time[1]) >= 1) and (border_time[2] >=1) and (border_time[0] >=2017)
 
 
 if __name__ == '__main__':
