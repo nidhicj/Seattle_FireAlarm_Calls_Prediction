@@ -44,7 +44,7 @@ To get the call volume for the dates: <br>
 `python testExample.py -dt 2018 9 30 22 9 -dt 2021 6 24 10 0 8.9 -dt 2022 4 3 9 25 3 4.6`
 
 The output obtained is <br>
-`The predicted number of calls for these dates are:`
+`The predicted number of calls for these dates are:` <br>
 `[30 12  8]`
 
 
