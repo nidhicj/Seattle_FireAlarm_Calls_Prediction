@@ -3,7 +3,7 @@ from train import *
 from predictions import *
 
 if __name__ == "__main__" :
-    home_folder = "/mnt/d/Germany/folder_01/Seattle_Calls_Prediction"
+    home_folder = "<<Initialize your home_folder destination>>"
     
     print("Carrying out Feature Engineering")
     pre_processing(home_folder)

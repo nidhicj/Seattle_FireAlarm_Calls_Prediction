@@ -30,7 +30,7 @@ The supporting files for these tasks are in `train.py`,`predictions.py` and `mod
 
 ## Rebuild and Testing
 
-To rebuild this assessment, please install the dependecies or use .yml file for the similar conda environment. The `src/main.py` file can be used to rebuild the this task and a model will be trained and predicted up on. The results will be saved in respective folders.
+To rebuild this assessment, please install the dependecies or use .yml file for the similar conda environment. The `src/main.py` file can be used to rebuild the this task and a model will be trained and predicted up on dataset. Do change the `home_folder` variable in this file to the your home_folder destination. The results will be saved in respective folders. 
 
 To test the obtained model, use `testExample.py` file in terminal with the script:
 `python testExamply.py -dt <datetime/weather-01> -dt <datetime/weather-01> ...`

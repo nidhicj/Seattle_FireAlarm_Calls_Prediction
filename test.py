@@ -4,8 +4,6 @@ import argparse
 from src.model import *
 import unittest as ut
 
-odd_months = [1,3,5,7,8,10,12]
-even_months = [4,6,9,11]
 
 def input_mods(args):
     all_user_inputs = []
@@ -22,7 +20,9 @@ def input_mods(args):
 
     
 def test_wrong_dates(all_user_inputs):
-    
+    odd_months = [1,3,5,7,8,10,12]
+    even_months = [4,6,9,11]
+
     for date in all_user_inputs:
         if (int(date[1]) in odd_months) and (1 <= date[2] <=31):
             pass
@@ -36,7 +36,7 @@ def test_wrong_dates(all_user_inputs):
             raise Exception("Sorry, the date is not correct") 
     for time in all_user_inputs:
         assert (0 <= int(time[3]) <=23 ) and (0 <= time[4] <=59)
-        
+
     #for better accuracy conditions the testing timeline is set for dates after 2017-01-01
     for border_time in all_user_inputs:
         assert (int(border_time[1]) >= 1) and (border_time[2] >=1) and (border_time[0] >=2017)
@@ -48,7 +48,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     
     #Initializaing datasets and folders
-    home_folder = "/mnt/d/Germany/folder_01/Seattle_Calls_Prediction" 
+    home_folder = "<<Initialize your home_folder destination>>" 
     target = pd.read_csv(home_folder+"/data/meta_data.csv")
     target = target.set_index("Datetime")
     train = target.loc[target.index < '2022-01-01']
