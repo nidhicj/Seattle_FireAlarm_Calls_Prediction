@@ -20,7 +20,7 @@ def input_mods(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='...')
-    parser.add_argument('-dt','--datetime', type=int, nargs='+', action='append', 
+    parser.add_argument('-dt','--datetime', type=float, nargs='+', action='append', 
     help='file list')
     args = parser.parse_args()
     
